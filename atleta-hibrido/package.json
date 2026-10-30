@@ -1,0 +1,14 @@
+{
+  "name": "atleta-hibrido",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plano Desafio Atleta Híbrido (corrida + musculação) como PWA estático.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/dev.mjs --dir dist --port 4173",
+    "test": "node --test"
+  }
+}
