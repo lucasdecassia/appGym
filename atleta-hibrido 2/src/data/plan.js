@@ -77,10 +77,10 @@ export const RUNS = {
     howTo: "Faça cada tiro em esforço muito forte, porém controlado. Na recuperação, trote bem leve ou caminhe até a respiração normalizar.",
     summary: "Tiros em Z5 com recuperação em Z1 entre eles.",
     steps: [
-      { label: "Aquecimento / base", reps: 1, zone: "Z2", pace: ZONES.find(z => z.id === "Z2").pace, value: 3, unit: "km" },
-      { label: "Tiros fortes", reps: 6, zone: "Z5", pace: ZONES.find(z => z.id === "Z5").pace, value: 500, unit: "m" },
-      { label: "Recuperação entre tiros", reps: 6, zone: "Z1", pace: ZONES.find(z => z.id === "Z1").pace, value: 2, unit: "min" },
-      { label: "Desaquecimento", reps: 1, zone: "Z1", pace: ZONES.find(z => z.id === "Z1").pace, value: 5, unit: "min" },
+      { label: "Aquecimento / base", reps: 1, zone: "Z2", value: 3, unit: "km" },
+      { label: "Tiros fortes", reps: 6, zone: "Z5", value: 500, unit: "m" },
+      { label: "Recuperação entre tiros", reps: 6, zone: "Z1", value: 2, unit: "min" },
+      { label: "Desaquecimento", reps: 1, zone: "Z1", value: 5, unit: "min" },
     ],
   },
   steadyWed: {
@@ -91,9 +91,9 @@ export const RUNS = {
     howTo: "Mantenha o esforço estável do começo ao fim. Se a conversa ficar impossível, reduza o ritmo.",
     summary: "Ritmo constante em Z3.",
     steps: [
-      { label: "Aquecimento", reps: 1, zone: "Z1", pace: ZONES.find(z => z.id === "Z1").pace, value: 5, unit: "min" },
-      { label: "Bloco principal", reps: 1, zone: "Z3", pace: ZONES.find(z => z.id === "Z3").pace, value: 6, unit: "km" },
-      { label: "Desaquecimento", reps: 1, zone: "Z1", pace: ZONES.find(z => z.id === "Z1").pace, value: 5, unit: "min" },
+      { label: "Aquecimento", reps: 1, zone: "Z1",value: 5, unit: "min" },
+      { label: "Bloco principal", reps: 1, zone: "Z3", value: 6, unit: "km" },
+      { label: "Desaquecimento", reps: 1, zone: "Z1", value: 5, unit: "min" },
     ],
   },
   fartlek: {
@@ -105,9 +105,9 @@ export const RUNS = {
     summary: "Repetir 3× o par: 1 km em Z3 → 3 km em Z4 (conforme o slide original, ≈12 km no total).",
     steps: [
       { label: "Aquecimento", reps: 1, zone: "Z2", pace: "5:40–6:25 min/km", value: 5, unit: "min" },
-      { label: "Bloco moderado", reps: 3, zone: "Z3", pace: ZONES.find(z => z.id === "Z3").pace, value: 1, unit: "km" },
-      { label: "Bloco forte", reps: 3, zone: "Z4", pace: ZONES.find(z => z.id === "Z4").pace, value: 3, unit: "km" },
-      { label: "Desaquecimento", reps: 1, zone: "Z1", pace: ZONES.find(z => z.id === "Z1").pace, value: 5, unit: "min" },
+      { label: "Bloco moderado", reps: 3, zone: "Z3", value: 1, unit: "km" },
+      { label: "Bloco forte", reps: 3, zone: "Z4", value: 3, unit: "km" },
+      { label: "Desaquecimento", reps: 1, zone: "Z1", value: 5, unit: "min" },
     ],
   },
   steadySun: {
@@ -118,9 +118,9 @@ export const RUNS = {
     howTo: "Mantenha o esforço estável do começo ao fim. Se a conversa ficar impossível, reduza o ritmo.",
     summary: "Mesmo formato de quarta.",
     steps: [
-      { label: "Aquecimento", reps: 1, zone: "Z1", pace: ZONES.find(z => z.id === "Z1").pace, value: 5, unit: "min" },
-      { label: "Bloco principal", reps: 1, zone: "Z3", pace: ZONES.find(z => z.id === "Z3").pace, value: 6, unit: "km" },
-      { label: "Desaquecimento", reps: 1, zone: "Z1", pace: ZONES.find(z => z.id === "Z1").pace, value: 5, unit: "min" },
+      { label: "Aquecimento", reps: 1, zone: "Z1", value: 5, unit: "min" },
+      { label: "Bloco principal", reps: 1, zone: "Z3", value: 6, unit: "km" },
+      { label: "Desaquecimento", reps: 1, zone: "Z1", value: 5, unit: "min" },
     ],
   }
 };
