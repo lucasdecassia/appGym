@@ -78,7 +78,7 @@ export const RUNS = {
     summary: "Tiros em Z5 com recuperação em Z1 entre eles.",
     plain: [
       { text: "Aquecimento: corra 3 km em ritmo leve para preparar o corpo.", zones: ["Z2"] },
-      { text: "Repita 6 vezes este par, sem pular nenhuma: corra 500 metros bem forte (1 tiro) e logo depois descanse 2 minutos, trotando bem leve ou caminhando.", zones: ["Z5", "Z1"] },
+      { text: "Repitir 6 vezes: 500 metros bem forte (1 tiro) e logo depois descanse 2 minutos, trotando bem leve ou caminhando.", zones: ["Z5", "Z1"] },
       { text: "Desaquecimento: 5 minutos bem leve para o corpo voltar ao normal.", zones: ["Z1"] },
     ],
     steps: [
@@ -115,7 +115,7 @@ export const RUNS = {
     summary: "Repetir 3× o par: 1 km em Z3 → 3 km em Z4 (conforme o slide original, ≈12 km no total).",
     plain: [
       { text: "Aquecimento: 5 minutos de trote leve.", zones: ["Z2"] },
-      { text: "Repita 3 vezes, uma logo após a outra, sem parar: primeiro 1 km em ritmo moderado e, em seguida, 3 km em ritmo forte. Cada repetição tem 4 km; as 3 repetições somam 12 km.", zones: ["Z3", "Z4"] },
+      { text: "3 repecições sem pausa: 1 km em ritmo moderado e 3 km em ritmo forte. Cada repetição tem 4 km; as 3 repetições somam 12 km.", zones: ["Z3", "Z4"] },
       { text: "Desaquecimento: 5 minutos bem leve.", zones: ["Z1"] },
     ],
     steps: [
