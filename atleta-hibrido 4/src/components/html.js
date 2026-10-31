@@ -27,7 +27,7 @@ export const zoneWithBpm = (profile, zoneId) => {
       </div>
 
       <div class="zone-pace">
-        <span class="zone-pace-label">Pace médio de referência</span>
+        <span class="zone-pace-label">Pace médio</span>
         <strong>${esc(zone.pace || "Não definido")}</strong>
       </div>
     </div>

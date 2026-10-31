@@ -21,7 +21,7 @@ function zoneGuide(state) {
       </div>
 
       <dl>
-        <dt>Pace médio de referência</dt>
+        <dt>Pace médio</dt>
         <dd><strong class="zone-pace-value">${esc(z.pace || "Não definido")}</strong></dd>
 
         <dt>Esforço (RPE)</dt>
