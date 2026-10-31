@@ -65,7 +65,7 @@ export const ZONES = [
     purpose: "Potência aeróbia e capacidade de alta intensidade, em intervalos curtos.",
     block: "30 s–5 min por repetição.",
     recovery: "Recuperação do tamanho do esforço ou maior; dias seguintes mais leves."
-  },
+  }
 ];
 
 export const RUNS = {
@@ -122,7 +122,7 @@ export const RUNS = {
       { label: "Bloco principal", reps: 1, zone: "Z3", value: 6, unit: "km" },
       { label: "Desaquecimento", reps: 1, zone: "Z1", value: 5, unit: "min" },
     ],
-  },
+  }
 };
 export const RUN_KEYS = Object.keys(RUNS);
 
