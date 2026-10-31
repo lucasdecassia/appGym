@@ -19,8 +19,6 @@ export const zoneWithBpm = (profile, zoneId, pace = null) => {
 
   if (!zone) return zoneBadge(zoneId);
 
-  const paceValue = pace || zone.pace || "Não definido";
-
   return `
     <div class="zone-info">
       <div class="zone-info-header">
@@ -29,8 +27,8 @@ export const zoneWithBpm = (profile, zoneId, pace = null) => {
       </div>
 
       <div class="zone-pace">
-        <span class="zone-pace-label">Pace de referência</span>
-        <strong>${esc(paceValue)}</strong>
+        <span class="zone-pace-label">Pace médio</span>
+        <strong>${esc(zone.pace || "Não definido")}</strong>
       </div>
     </div>
   `;
