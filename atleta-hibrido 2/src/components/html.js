@@ -14,7 +14,7 @@ export const calibrationTag = (profile) => {
   return `<span class="tag${c.calibrated ? " ok" : ""}">${c.tag}</span>`;
 };
 
-export const zoneWithBpm = (profile, zoneId, pace = null) => {
+export const zoneWithBpm = (profile, zoneId) => {
   const zone = ZONES.find((z) => z.id === zoneId);
 
   if (!zone) return zoneBadge(zoneId);
