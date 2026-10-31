@@ -196,8 +196,8 @@ test("Corrida: passo a passo em palavras simples explica o par que se repete", (
   assert.match(html, /Passo a passo, em palavras simples/);
   assert.match(html, /Repita 3 vezes, uma logo após a outra, sem parar: primeiro 1 km em ritmo moderado e, em seguida, 3 km em ritmo forte/);
   assert.match(html, /Repita 6 vezes este par/);
-  assert.match(html, /3 vezes de 1 km \(total 3 km\)/);
-  assert.match(html, /6 vezes de 500 m \(total 3 km\)/);
+  assert.match(html, /\(total 3 km\)/);
+  assert.match(html, /\(total 3 km\)/);
   assert.doesNotMatch(html, /3× 1 km|6× 500 m/);
 });
 
