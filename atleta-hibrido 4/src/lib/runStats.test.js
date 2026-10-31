@@ -33,9 +33,9 @@ test("tempo fixo das sessões", () => {
 test("formatação", () => {
   assert.equal(formatKm(6), "6");
   assert.equal(formatKm(2.55), "2,6");
-  assert.equal(formatStepVolume({ reps: 3, value: 1, unit: "km" }), "3 vezes de 1 km (total 3 km)");
-  assert.equal(formatStepVolume({ reps: 6, value: 500, unit: "m" }), "6 vezes de 500 m (total 3 km)");
-  assert.equal(formatStepVolume({ reps: 2, value: 400, unit: "m" }), "2 vezes de 400 m (total 800 m)");
-  assert.equal(formatStepVolume({ reps: 6, value: 2, unit: "min" }), "6 vezes de 2 min (total 12 min)");
+  assert.equal(formatStepVolume({ reps: 3, value: 1, unit: "km" }), "total 3 km");
+  assert.equal(formatStepVolume({ reps: 6, value: 500, unit: "m" }), "total 3 km");
+  assert.equal(formatStepVolume({ reps: 2, value: 400, unit: "m" }), "total 800 m");
+  assert.equal(formatStepVolume({ reps: 6, value: 2, unit: "min" }), "total 12 min");
   assert.equal(formatStepVolume({ reps: 1, value: 5, unit: "min" }), "5 min");
 });
