@@ -14,8 +14,25 @@ export const calibrationTag = (profile) => {
   return `<span class="tag${c.calibrated ? " ok" : ""}">${c.tag}</span>`;
 };
 
-export const zoneWithBpm = (profile, zoneId) =>
-  `${zoneBadge(zoneId)}<span class="bpm" style="margin-right:6px">${bpmText(profile, zoneId)}</span>`;
+export const zoneWithBpm = (profile, zoneId) => {
+  const zone = ZONES.find((z) => z.id === zoneId);
+
+  if (!zone) return zoneBadge(zoneId);
+
+  return `
+    <div class="zone-info">
+      <div class="zone-info-header">
+        ${zoneBadge(zoneId)}
+        <span class="bpm">${bpmText(profile, zoneId)}</span>
+      </div>
+
+      <div class="zone-pace">
+        <span class="zone-pace-label">Pace médio de referência</span>
+        <strong>${esc(zone.pace || "Não definido")}</strong>
+      </div>
+    </div>
+  `;
+};
 
 export const allZonesWithBpm = (profile) => ZONES.map((z) => zoneWithBpm(profile, z.id)).join("");
 
