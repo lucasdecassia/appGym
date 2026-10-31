@@ -104,7 +104,7 @@ export const RUNS = {
     howTo: "Cada par é 1 km em Z3 seguido de 3 km em Z4, sem pausa. Se não conseguir completar em Z4, reduza para Z3 em vez de parar.",
     summary: "Repetir 3× o par: 1 km em Z3 → 3 km em Z4 (conforme o slide original, ≈12 km no total).",
     steps: [
-      { label: "Aquecimento", reps: 1, zone: "Z2", pace: "5:40–6:25 min/km", value: 5, unit: "min" },
+      { label: "Aquecimento", reps: 1, zone: "Z2", value: 5, unit: "min" },
       { label: "Bloco moderado", reps: 3, zone: "Z3", value: 1, unit: "km" },
       { label: "Bloco forte", reps: 3, zone: "Z4", value: 3, unit: "km" },
       { label: "Desaquecimento", reps: 1, zone: "Z1", value: 5, unit: "min" },
