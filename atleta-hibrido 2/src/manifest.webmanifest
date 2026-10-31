@@ -1,7 +1,7 @@
 {
-  "name": "Atleta Híbrido · Meu Plano",
-  "short_name": "Atleta Híbrido",
-  "description": "Corrida e musculação do Desafio Atleta Híbrido.",
+  "name": "Treino Híbrido · Meu Plano",
+  "short_name": "Treino Híbrido",
+  "description": "Corrida e musculação.",
   "lang": "pt-BR",
   "start_url": "./",
   "scope": "./",
