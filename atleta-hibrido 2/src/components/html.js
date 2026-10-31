@@ -14,10 +14,12 @@ export const calibrationTag = (profile) => {
   return `<span class="tag${c.calibrated ? " ok" : ""}">${c.tag}</span>`;
 };
 
-export const zoneWithBpm = (profile, zoneId) => {
+export const zoneWithBpm = (profile, zoneId, pace = null) => {
   const zone = ZONES.find((z) => z.id === zoneId);
 
   if (!zone) return zoneBadge(zoneId);
+
+  const paceValue = pace || zone.pace || "Não definido";
 
   return `
     <div class="zone-info">
@@ -27,8 +29,8 @@ export const zoneWithBpm = (profile, zoneId) => {
       </div>
 
       <div class="zone-pace">
-        <span class="zone-pace-label">Pace médio</span>
-        <strong>${esc(zone.pace || "Não definido")}</strong>
+        <span class="zone-pace-label">Pace de referência</span>
+        <strong>${esc(paceValue)}</strong>
       </div>
     </div>
   `;

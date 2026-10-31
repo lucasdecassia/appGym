@@ -76,7 +76,7 @@ function runCard(state, ui, key, today) {
   const steps = run.steps.map((s) => {
     const z = zoneInfo(s.zone);
     return `<div class="step">${zoneBadge(s.zone)}<div class="grow"><div class="phase">${phaseOf(s.label)}</div><div class="t">${esc(s.label)}</div>
-      <div class="bpm">RPE ${z.rpe} · ${esc(z.talk)}</div><div class="bpm">${bpmText(state.profile, s.zone)}</div></div><b>${formatStepVolume(s)}</b></div>`;
+      <div class="bpm">RPE ${z.rpe} · ${esc(z.talk)}</div><div class="bpm">${bpmText(state.profile, step.zone, step.pace)}</div></div><b>${formatStepVolume(s)}</b></div>`;
   }).join("");
   return `<details class="card" ${ui.openRun === key ? "open" : ""} id="run-${key}"><summary><div class="row sp">
     <div class="grow"><div class="muted">${run.day}</div><h3>${esc(run.name)}</h3></div>
