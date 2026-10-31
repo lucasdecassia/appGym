@@ -6,11 +6,66 @@ export const DAY_INITIALS = ["S", "T", "Q", "Q", "S", "S", "D"];
 export const MONTHS = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"];
 
 export const ZONES = [
-  { id: "Z1", pace: "Acima de 6:25 min/km", name: "Recuperação · muito leve", min: 0.5, max: 0.6, rpe: "2–3", talk: "Conversa confortável, frases longas.", purpose: "Recuperação ativa, aquecimento e desaquecimento.", block: "5–10 min no aquecimento/desaquecimento, ou corridas curtas de recuperação.", recovery: "Não exige recuperação extra." },
-  { id: "Z2", pace: "5:40–6:25 min/km", name: "Aeróbia · leve", min: 0.6, max: 0.7, rpe: "3–4", talk: "Frases completas sem esforço.", purpose: "Constrói base aeróbia e eficiência; esforço leve e sustentável.", block: "30–90 min contínuos.", recovery: "Baixa; pode ser repetida em dias seguidos." },
-  { id: "Z3", pace: "5:20–5:40 min/km", name: "Moderada · tempo controlado", min: 0.7, max: 0.85, rpe: "5–6", talk: "Frases curtas; conversa exige atenção.", purpose: "Desenvolve a capacidade de sustentar ritmos mais exigentes.", block: "10–40 min contínuos ou em blocos longos.", recovery: "Pausa curta ou nenhuma entre blocos; atenção à fadiga acumulada." },
-  { id: "Z4", pace: "4:55–5:15 min/km", name: "Limiar · forte", min: 0.85, max: 0.95, rpe: "7–8", talk: "Poucas palavras por vez.", purpose: "Trabalha tolerância e sustentação próxima ao limiar.", block: "3–20 min em blocos.", recovery: "Recuperação ativa leve entre blocos (Z1–Z2)." },
-  { id: "Z5", pace: "Abaixo de 4:55 min/km", name: "Alta intensidade · VO₂", min: 0.95, max: 1.0, rpe: "9–10", talk: "Falar é muito difícil.", purpose: "Potência aeróbia e capacidade de alta intensidade, em intervalos curtos.", block: "30 s–5 min por repetição.", recovery: "Recuperação do tamanho do esforço ou maior; dias seguintes mais leves." },
+  {
+    id: "Z1",
+    name: "Recuperação · muito leve",
+    min: 0.5,
+    max: 0.6,
+    rpe: "2–3",
+    pace: "Acima de 6:25 min/km",
+    talk: "Conversa confortável, frases longas.",
+    purpose: "Recuperação ativa, aquecimento e desaquecimento.",
+    block: "5–10 min no aquecimento/desaquecimento, ou corridas curtas de recuperação.",
+    recovery: "Não exige recuperação extra."
+  },
+  {
+    id: "Z2",
+    name: "Aeróbia · leve",
+    min: 0.6,
+    max: 0.7,
+    rpe: "3–4",
+    pace: "5:40–6:25 min/km",
+    talk: "Frases completas sem esforço.",
+    purpose: "Constrói base aeróbia e eficiência; esforço leve e sustentável.",
+    block: "30–90 min contínuos.",
+    recovery: "Baixa; pode ser repetida em dias seguidos."
+  },
+  {
+    id: "Z3",
+    name: "Moderada · tempo controlado",
+    min: 0.7,
+    max: 0.85,
+    rpe: "5–6",
+    pace: "5:20–5:40 min/km",
+    talk: "Frases curtas; conversa exige atenção.",
+    purpose: "Desenvolve a capacidade de sustentar ritmos mais exigentes.",
+    block: "10–40 min contínuos ou em blocos longos.",
+    recovery: "Pausa curta ou nenhuma entre blocos; atenção à fadiga acumulada."
+  },
+  {
+    id: "Z4",
+    name: "Limiar · forte",
+    min: 0.85,
+    max: 0.95,
+    rpe: "7–8",
+    pace: "4:55–5:15 min/km",
+    talk: "Poucas palavras por vez.",
+    purpose: "Trabalha tolerância e sustentação próxima ao limiar.",
+    block: "3–20 min em blocos.",
+    recovery: "Recuperação ativa leve entre blocos (Z1–Z2)."
+  },
+  {
+    id: "Z5",
+    name: "Alta intensidade · VO₂",
+    min: 0.95,
+    max: 1.0,
+    rpe: "9–10",
+    pace: "Abaixo de 4:55 min/km",
+    talk: "Falar é muito difícil.",
+    purpose: "Potência aeróbia e capacidade de alta intensidade, em intervalos curtos.",
+    block: "30 s–5 min por repetição.",
+    recovery: "Recuperação do tamanho do esforço ou maior; dias seguintes mais leves."
+  }
 ];
 
 export const RUNS = {
