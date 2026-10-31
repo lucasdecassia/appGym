@@ -2,7 +2,7 @@
   "name": "atleta-hibrido",
   "version": "2.0.0",
   "private": true,
-  "description": "Atleta Híbrido: treino, corrida por zonas, nutrição, hidratação, sono e painel — PWA estático.",
+  "description": "Treino Híbrido: treino, corrida por zonas, nutrição, hidratação, sono e painel — PWA estático.",
   "type": "module",
   "engines": { "node": ">=20" },
   "scripts": {
