@@ -10,12 +10,64 @@ const zoneInfo = (id) => ZONES.find((z) => z.id === id);
 
 function zoneGuide(state) {
   const c = zoneCalibration(state.profile);
-  const rows = ZONES.map((z) => `<div class="zone-row"><div class="row">${zoneBadge(z.id)}<b>${esc(z.name)}</b></div><dl>
-    <dt>Esforço (RPE)</dt><dd>${z.rpe} de 10</dd><dt>Teste da fala</dt><dd>${esc(z.talk)}</dd><dt>Propósito</dt><dd>${esc(z.purpose)}</dd>
-    <dt>Bloco típico</dt><dd>${esc(z.block)}</dd><dt>Recuperação</dt><dd>${esc(z.recovery)}</dd><dt>Faixa (bpm)</dt><dd>${bpmText(state.profile, z.id)}</dd></dl></div>`).join("");
-  return `<div class="card"><div class="row sp"><h3>Zonas de corrida Z1–Z5</h3>${calibrationTag(state.profile)}</div>
-    <div class="muted" style="margin-top:6px">Zonas são faixas de intensidade, não valores exatos. Método usado: <b>${esc(c.method)}</b> (FCmáx ${maxHeartRate(state.profile)} bpm).${c.calibrated ? "" : " Sem FCmáx medida, guie-se primeiro pelo esforço (RPE) e pelo teste da fala; os bpm são aproximados."}</div>
-    <details class="inner"><summary>Como sentir cada zona</summary>${rows}<div class="note">Modelo didático (RPE e fala) para orientar a execução; os limites individuais dependem de teste.</div></details></div>`;
+
+  const rows = ZONES.map((z) => `
+    <div class="zone-row">
+      <div class="row">
+        ${zoneBadge(z.id)}
+        <b>${esc(z.name)}</b>
+      </div>
+
+      <dl>
+        <dt>Pace médio de referência</dt>
+        <dd><strong class="zone-pace-value">${esc(z.pace || "Não definido")}</strong></dd>
+
+        <dt>Esforço (RPE)</dt>
+        <dd>${esc(z.rpe)} de 10</dd>
+
+        <dt>Teste da fala</dt>
+        <dd>${esc(z.talk)}</dd>
+
+        <dt>Propósito</dt>
+        <dd>${esc(z.purpose)}</dd>
+
+        <dt>Bloco típico</dt>
+        <dd>${esc(z.block)}</dd>
+
+        <dt>Recuperação</dt>
+        <dd>${esc(z.recovery)}</dd>
+
+        <dt>Faixa (bpm)</dt>
+        <dd>${bpmText(state.profile, z.id)}</dd>
+      </dl>
+    </div>
+  `).join("");
+
+  return `
+    <div class="card">
+      <div class="row sp">
+        <h3>Zonas de corrida Z1–Z5</h3>
+        ${calibrationTag(state.profile)}
+      </div>
+
+      <div class="muted" style="margin-top:6px">
+        Zonas são faixas de intensidade, não valores exatos.
+        Método usado: <b>${esc(c.method)}</b>
+        (FCmáx ${maxHeartRate(state.profile)} bpm).
+        ${c.calibrated ? "" : " Sem FCmáx medida, guie-se primeiro pelo esforço (RPE) e pelo teste da fala; os bpm são aproximados."}
+      </div>
+
+      <details class="inner">
+        <summary>Como sentir cada zona</summary>
+        ${rows}
+        <div class="note">
+          Modelo didático (RPE e fala) para orientar a execução;
+          os limites individuais dependem de teste.
+          Os paces apresentados são referências ilustrativas.
+        </div>
+      </details>
+    </div>
+  `;
 }
 
 function runCard(state, ui, key, today) {
