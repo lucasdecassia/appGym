@@ -88,8 +88,6 @@ function runCard(state, ui, key, today) {
     <p class="muted" style="margin:0 0 8px"><b>Como executar:</b> ${esc(run.howTo)}</p>
     <div class="muted">Total do treino: ${formatKm(runKm(run))} km de distância, mais ${runMinutes(run)} min em etapas por tempo (aquecimento, recuperações e desaquecimento).</div>
     <h4 class="sub">Passo a passo, em palavras simples</h4>${plainSteps(run)}
-    <h4 class="sub">Detalhes de cada etapa</h4>
-    <div class="note" style="margin:0 0 4px">“3 vezes de 1 km” = faça 1 km, repetido 3 vezes (o total aparece entre parênteses). Pace = tempo por km; bpm = batimentos por minuto; RPE = esforço de 1 a 10.</div>${steps}
     ${aiButton("run", key)}
     ${sessionLogForm(state, ui, "run", key, today)}</details>`;
 }
