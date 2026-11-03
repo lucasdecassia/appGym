@@ -1,7 +1,7 @@
 /* ===== Tokens (única fonte de cores; componentes só usam var(--…)) ===== */
 :root {
   color-scheme: dark;
-  --color-bg: #000102;
+  --color-bg: #111212;
   --color-surface: #111b2b;
   --color-surface-raised: #182438;
   --color-primary: #246bce;
