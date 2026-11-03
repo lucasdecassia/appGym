@@ -87,7 +87,7 @@ function runCard(state, ui, key, today) {
     <p class="muted" style="margin:0 0 4px"><b>Por que está no plano:</b> ${esc(run.why)}</p>
     <p class="muted" style="margin:0 0 8px"><b>Como executar:</b> ${esc(run.howTo)}</p>
     <div class="muted">Total do treino: ${formatKm(runKm(run))} km de distância, mais ${runMinutes(run)} min em etapas por tempo (aquecimento, recuperações e desaquecimento).</div>
-    <h4 class="sub">Passo a passo, em palavras simples</h4>${plainSteps(run)}
+    <h4 class="sub">Passo a passo</h4>${plainSteps(run)}
     ${aiButton("run", key)}
     ${sessionLogForm(state, ui, "run", key, today)}</details>`;
 }

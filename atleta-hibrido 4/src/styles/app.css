@@ -1,7 +1,7 @@
 /* ===== Tokens (única fonte de cores; componentes só usam var(--…)) ===== */
 :root {
   color-scheme: dark;
-  --color-bg: #080d18;
+  --color-bg: #000102;
   --color-surface: #111b2b;
   --color-surface-raised: #182438;
   --color-primary: #246bce;
@@ -13,7 +13,7 @@
   --color-text-muted: #aab8cc;
   --color-border: #2a3a52;
   --color-border-strong: #6f86a8;   /* bordas de campos (≥ 3:1) */
-  --color-success: #35c27a;
+  --color-success: #35da6c;
   --color-on-success: #04140c;
   --color-warning: #f5a524;
   --color-on-warning: #1a1200;
